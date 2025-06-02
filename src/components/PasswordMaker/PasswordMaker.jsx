@@ -24,30 +24,30 @@ export default function PasswordMaker() {
   };
 
   return (
-    <div className="w-full max-w-[600px] mx-auto h-auto bg-amber-300 rounded-2xl p-6 shadow-md">
+    <div className="w-full max-w-[600px] mx-auto h-auto bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-2xl p-6 shadow-lg text-white">
       <div className="w-full flex flex-col items-center">
         <h1 className="font-bold mb-8 text-center text-lg sm:text-xl md:text-2xl">
           طول رمز مدنظر خود را وارد نمایید
         </h1>
         <input
-          className="w-[80%] sm:w-[300px] h-8 border rounded-2xl text-center text-base"
+          className="w-[80%] sm:w-[300px] h-10 border border-white rounded-2xl text-white text-center text-base text-black"
           onChange={(e) => {
             setlength(Number(e.target.value));
           }}
           type="number"
           required
         />
-        <p className="mt-5 text-lg">{password}</p>
+        <p className="mt-5 text-lg break-all">{password}</p>
         <div className="flex flex-col sm:flex-row gap-4 items-center mt-5">
           <button
-            className="w-[200px] h-10 cursor-pointer rounded-2xl bg-amber-500 hover:bg-amber-400 transition"
+            className="w-[200px] h-10 cursor-pointer rounded-2xl bg-purple-700 hover:bg-purple-600 transition text-white font-semibold"
             onClick={generatePassword}
           >
             ساخت پسورد
           </button>
           <button
             onClick={copyToClipboard}
-            className="w-[200px] h-10 cursor-pointer rounded-2xl bg-amber-500 hover:bg-amber-400 transition"
+            className="w-[200px] h-10 cursor-pointer rounded-2xl bg-pink-600 hover:bg-pink-500 transition text-white font-semibold"
           >
             کپی
           </button>

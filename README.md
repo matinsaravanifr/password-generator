@@ -6,6 +6,7 @@ This lightweight React app helps you create strong, random passwords tailored to
 
 
 
+
 🚀 Features
 Custom Length: Specify password length from 4 to 32 characters.
 

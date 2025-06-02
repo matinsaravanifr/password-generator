@@ -30,7 +30,7 @@ export default function PasswordMaker() {
           طول رمز مدنظر خود را وارد نمایید
         </h1>
         <input
-          className="w-[80%] sm:w-[300px] h-10 border border-white rounded-2xl text-white text-center text-base text-black"
+          className="w-[80%] sm:w-[300px] h-10 border border-white rounded-2xl text-white text-center text-base "
           onChange={(e) => {
             setlength(Number(e.target.value));
           }}
